@@ -118,5 +118,5 @@ function countSheep(sheepArray, listName) {
 ---
 
 <div align="center">
-  <sub>📚 Proyecto realizado para la asignatura <strong>Frontend: Javascript & APIs</strong></sub>
+  <sub>📚 Proyecto realizado para la asignatura <strong>Frontend: Javascript</strong></sub>
 </div>
