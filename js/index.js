@@ -1,19 +1,24 @@
 const list1 = [ true,  true,  true,  false, true,  true,  true,  true , true,  false, true,  false, true,  false, false, true , true,  true,  true,  true , false, false, true,  true ];
 const list2 = [ false, false, false ];
 
-function countSheep(sheepArray) {
+function countSheep(sheepArray, listName) {
 const result = sheepArray.filter((word) => word === true); 
 const count = result.length; 
 
 if (count > 0) {
-console.log("There are " + count + " sheep in total");
+    console.log(listName + " There are " + count + " sheep in total");
+    return listName + " ✅ " + count + " sheep survived!";
 }
 else {
-    console.log("UPS!!! Wolves have eaten the sheep");
+    console.log(listName + " UPS!!! Wolves have eaten the sheep");
+    return listName + " ❌ UPS!!! Wolves have eaten the sheep!";
 }
 }
 
-countSheep(list1);
-countSheep(list2)
+countSheep(list1, "1.");
+countSheep(list2, "2.");
+
+
+
 
 
