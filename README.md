@@ -108,7 +108,7 @@ function countSheep(sheepArray, listName) {
 ## 📸 Vista previa
 
 <div align="center">
-  <img src="img/Screenshot_sheep_senior.jpg" alt="Vista previa del proyecto" width="600"/>
+  <img src="img/Screenshot_sheep_senior_coder.jpg" alt="Vista previa del proyecto" width="600"/>
 </div>
 
 ---
