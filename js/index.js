@@ -15,11 +15,8 @@ else {
 }
 }
 
-countSheep(list1, "1.");
-countSheep(list2, "2.");
-
-const output1 = countSheep(list1, "List 1:");
-const output2 = countSheep(list2, "List 2:");
+const output1 = countSheep(list1, "1.");
+const output2 = countSheep(list2, "2.");
 
 document.getElementById('result-display').innerHTML =
 output1 + "<br>" + output2;
