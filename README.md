@@ -38,17 +38,7 @@ list1 = [
 ];
 ```
 
-**Output (consola):**
-```
-1. There are 17 sheep in total
-```
 
-**Output (página web):**
-```
-1. ✅ 17 sheep survived!
-```
-
-### 📋 Lista 2 — Solo lobos
 
 ```js
 list2 = [ false, false, false ];
@@ -118,7 +108,7 @@ function countSheep(sheepArray, listName) {
 ## 📸 Vista previa
 
 <div align="center">
-  <img src="img/sheep_coder.png" alt="Vista previa del proyecto" width="600"/>
+  <img src="img/Screenshot_sheep_senior.jpg" alt="Vista previa del proyecto" width="600"/>
 </div>
 
 ---
