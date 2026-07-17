@@ -22,7 +22,7 @@ Este proyecto resuelve el clásico ejercicio **"Counting Sheeps"**: dada una lis
 - ✅ **`true`** → representa una **oveja**
 - ❌ **`false`** → representa un **lobo**
 
-La función `countSheeps()` recorre el array, cuenta únicamente las ovejas (`true`) y devuelve el resultado. Si no queda ninguna oveja (solo lobos), se muestra un mensaje indicando que los lobos se han comido todo el rebaño.
+La función `countSheep()` recorre el array, cuenta únicamente las ovejas (`true`) y devuelve el resultado. Además, muestra los resultados tanto en la consola del navegador como en la página web. Si no queda ninguna oveja (solo lobos), se muestra un mensaje indicando que los lobos se han comido todo el rebaño.
 
 ---
 
@@ -38,9 +38,14 @@ list1 = [
 ];
 ```
 
-**Output:**
+**Output (consola):**
 ```
 1. There are 17 sheep in total
+```
+
+**Output (página web):**
+```
+1. ✅ 17 sheep survived!
 ```
 
 ### 📋 Lista 2 — Solo lobos
@@ -49,30 +54,37 @@ list1 = [
 list2 = [ false, false, false ];
 ```
 
-**Output:**
+**Output (consola):**
 ```
 2. UPS!!! Wolves have eaten the sheep
+```
+
+**Output (página web):**
+```
+2. ❌ UPS!!! Wolves have eaten the sheep!
 ```
 
 ---
 
 ## ⚙️ Cómo funciona
 
-La función `countSheeps(list)` utiliza `Array.filter()` para quedarse únicamente con los valores `true`, calcula la longitud del array resultante y evalúa:
+La función `countSheep(list)` utiliza `Array.filter()` para quedarse únicamente con los valores `true`, calcula la longitud del array resultante y evalúa:
 
-| Condición                    | Resultado                                |
-|------------------------------|------------------------------------------|
-| `count > 0` (hay ovejas)     | `"There are N sheep in total"`           |
-| `count === 0` (solo lobos)   | `"UPS!!! Wolves have eaten the sheep"`   |
+| Condición                    | Consola                               | Página web                              |
+|------------------------------|---------------------------------------|-----------------------------------------|
+| `count > 0` (hay ovejas)     | `"There are N sheep in total"`        | `"✅ N sheep survived!"`                |
+| `count === 0` (solo lobos)   | `"UPS!!! Wolves have eaten the sheep"`| `"❌ UPS!!! Wolves have eaten the sheep!"` |
 
 ```js
 function countSheep(sheepArray, listName) {
   const result = sheepArray.filter((word) => word === true);
   const count = result.length;
-  
+
   if (count > 0) {
+    console.log(listName + " There are " + count + " sheep in total");
     return listName + " ✅ " + count + " sheep survived!";
   } else {
+    console.log(listName + " UPS!!! Wolves have eaten the sheep");
     return listName + " ❌ UPS!!! Wolves have eaten the sheep!";
   }
 }
@@ -89,9 +101,9 @@ function countSheep(sheepArray, listName) {
 
 2. **Abre el archivo `index.html`** en tu navegador.
 
-3. **Mira los resultados:**
-   - En la consola del navegador (`F12` → Console)
-   - En el panel de resultados visual de la página
+3. **Mira los resultados en dos lugares:**
+   - **Consola del navegador** (`F12` → Console) — mensajes de texto plano
+   - **Panel de resultados visual** en la página — mensajes con emojis ✅ / ❌
 
 ---
 
